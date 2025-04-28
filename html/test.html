@@ -1,22 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fa">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="../src/output.css" />
+    <title>حرکت دیف با Tailwind</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      #movingDiv {
+        transform: rotate(-5deg); /* کج شدن دیف */
+      }
+    </style>
   </head>
-  <body class="flex justify-center items-center h-screen w-full">
+  <body class="bg-gray-100 overflow-hidden">
     <div
       id="movingDiv"
-      class="h-[150px] w-[150px] border rounded-lg transition-transform duration-500 rotate-12"
+      class="absolute top-24 left-0 w-48 h-36 transition-transform duration-300"
     >
       <img
-        src="img/gallary-1.jpg"
-        class="h-10 w-10 transition-transform duration-500 rotate-3"
-        alt=""
+        src="https://via.placeholder.com/200x150"
+        alt="تصویر"
+        class="w-full h-full rounded-lg object-cover"
       />
     </div>
+
     <script>
       const div = document.getElementById("movingDiv");
       let direction = 1;
