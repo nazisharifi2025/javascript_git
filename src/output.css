@@ -339,6 +339,9 @@
   .border-collapse {
     border-collapse: collapse;
   }
+  .origin-top-left {
+    transform-origin: top left;
+  }
   .rotate-3 {
     rotate: 3deg;
   }
@@ -373,6 +376,10 @@
   }
   .rotate-z-45 {
     --tw-rotate-z: rotateZ(45deg);
+    transform: var(--tw-rotate-x,) var(--tw-rotate-y,) var(--tw-rotate-z,) var(--tw-skew-x,) var(--tw-skew-y,);
+  }
+  .skew-y-\[-5deg\] {
+    --tw-skew-y: skewY(-5deg);
     transform: var(--tw-rotate-x,) var(--tw-rotate-y,) var(--tw-rotate-z,) var(--tw-skew-x,) var(--tw-skew-y,);
   }
   .transform {
