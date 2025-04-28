@@ -1,38 +1,49 @@
 <!DOCTYPE html>
-<html lang="fa">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>مهره لودو با Tailwind</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-      .rotate-animation {
-        animation: spin 1s linear;
-      }
-
-      @keyframes spin {
-        from {
-          transform: rotate(0deg);
-        }
-        to {
-          transform: rotate(360deg);
-        }
-      }
-    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../src/output.css" />
   </head>
-  <body class="flex items-center justify-center h-screen bg-gray-100">
+  <body
+    class="text-center flex justify-center items-center bg-linear-90 from-pink-400 to-blue-400"
+  >
+    <div class="font-serif font-bold text-5xl absolute left-28 top-[40%]">
+      FooD
+    </div>
+    <div class="font-serif font-bold text-2xl absolute left-8 top-[50%]">
+      Book <span class="text-amber-600">Cater</span> Sare For Your <br />
+      Dueun Event
+    </div>
     <div
-      id="piece"
-      class="w-16 h-16 bg-red-500 rounded-full shadow-lg cursor-pointer"
-      onclick="rotatePiece(this)"
-    ></div>
-
-    <script>
-      function rotatePiece(el) {
-        el.classList.add("rotate-animation");
-        setTimeout(() => {
-          el.classList.remove("rotate-animation");
-        }, 1000); // مدت زمان انیمیشن
-      }
-    </script>
+      class="h-[230px] w-[230px] mt-60 ml-20 transition-transform duration-500 hover:rounded-full hover:rotate-[360deg] rotate-45 border-8 border-white"
+    >
+      <img
+        src="img/gallary-1.jpg"
+        class="transition-transform duration-500 hover:rounded-full"
+        alt=""
+      />
+    </div>
+    <div
+      class="h-[190px] w-[190px] mt-60 ml-20 transition-transform duration-500 hover:rotate-[360deg] rotate-45 absolute left-96 -top-32 border-8 border-white"
+    >
+      <img src="img/gallary-2.jpg" class="" alt="" />
+    </div>
+    <div
+      class="h-[190px] w-[190px] mt-60 ml-20 transition-transform duration-500 hover:rotate-[360deg] rotate-45 absolute right-96 -top-32 border-8 border-white"
+    >
+      <img src="img/gallary-3.jpg" class="" alt="" />
+    </div>
+    <div
+      class="h-[190px] w-[190px] mt-60 ml-20 transition-transform duration-500 hover:rotate-[360deg] rotate-45 absolute left-[389px] top-44 border-8 border-white"
+    >
+      <img src="img/gallary-4.jpg" class="" alt="" />
+    </div>
+    <div
+      class="h-[190px] w-[190px] mt-60 ml-20 transition-transform duration-500 hover:rotate-[360deg] rotate-45 absolute right-[390px] top-44 border-8 border-white"
+    >
+      <img src="img/gallary-6.jpg" class="" alt="" />
+    </div>
   </body>
 </html>
