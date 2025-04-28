@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../src/output.css" />
+  </head>
+  <body class="h-screen w-full bg-gray-100 overflow-hidden relative">
+    <div
+      id="movingDiv"
+      class="absolute top-20 h-[150px] w-[150px] border rounded-lg transition-transform duration-500 rotate-12"
+    >
+      <img
+        src="img/gallary-1.jpg"
+        class="h-full w-full object-cover rounded-lg transition-transform duration-500 rotate-3"
+        alt="عکس"
+      />
+    </div>
+
+    <script>
+      const div = document.getElementById("movingDiv");
+      let direction = 1;
+      let pos = 0;
+
+      function animate() {
+        const screenWidth = window.innerWidth;
+        pos += direction * 2;
+
+        if (pos + div.offsetWidth >= screenWidth || pos <= 0) {
+          direction *= -1;
+        }
+
+        div.style.left = pos + "px";
+        requestAnimationFrame(animate);
+      }
+
+      animate();
+    </script>
+  </body>
+</html>

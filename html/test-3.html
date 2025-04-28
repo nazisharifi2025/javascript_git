@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>عکس در حال حرکت</title>
+    <link rel="stylesheet" href="../src/output.css" />
+    <style>
+      #movingImage {
+        position: absolute;
+      }
+    </style>
+  </head>
+  <body class="flex justify-center items-center h-screen w-full bg-gray-100">
+    <div
+      class="relative h-[250px] w-[450px] border rounded-lg overflow-hidden rotate-6"
+    >
+      <img
+        id="movingImage"
+        src="img/gallary-1.jpg"
+        class="h-[120px] w-[120px] mt-32 object-cover rounded-lg"
+        alt="عکس"
+      />
+    </div>
+
+    <script>
+      const img = document.getElementById("movingImage");
+      const container = img.parentElement;
+      let direction = 1;
+      let pos = 0;
+
+      function animate() {
+        const max = container.clientWidth - img.clientWidth;
+        pos += direction * 2;
+
+        if (pos >= max || pos <= 0) {
+          direction *= -1;
+        }
+
+        img.style.left = pos + "px";
+        requestAnimationFrame(animate);
+      }
+
+      animate();
+    </script>
+  </body>
+</html>
