@@ -17,14 +17,14 @@
   />
   </div>
   <script>
-    const img = document.getElementById("movingImge");
-    const contener = img.parentElement;
+    const img = document.getElementById("movingImage");
+    const  container = img.parentElement;
     let num = 1;
     let tik = 0;
     function anim(){
-        const sum = img.clientWidth - contener.clientWidth ;
+        const sum = container.clientWidth - img.clientWidth ;
         tik += num * 2;
-        if(tik >= sum || tik <=0){
+        if(tik >= sum || tik <= 0){
             num *= -1;
         } 
         img.style.left = tik + "px";
