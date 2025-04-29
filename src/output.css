@@ -581,6 +581,9 @@
   .text-center {
     text-align: center;
   }
+  .font-sans {
+    font-family: var(--font-sans);
+  }
   .font-serif {
     font-family: var(--font-serif);
   }
