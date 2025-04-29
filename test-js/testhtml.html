@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="fa">
+  <head>
+    <meta charset="UTF-8" />
+    <title>لیست خرید با Tailwind</title>
+    <script src="test-js.js" defer></script>
+    <link rel="stylesheet" href="../src/output.css" />
+  </head>
+  <body class="bg-gray-100 flex flex-col items-center min-h-screen py-12">
+    <h2 class="text-2xl font-bold mb-6">🛒 لیست خرید من</h2>
+
+    <div class="flex items-center gap-4 mb-6">
+      <input
+        id="itemInput"
+        type="text"
+        placeholder="چی می‌خوای بخری؟"
+        class="px-4 py-2 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
+      />
+      <button
+        onclick="addItem()"
+        class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-md shadow"
+      >
+        افزودن
+      </button>
+    </div>
+
+    <ul id="shoppingList" class="w-80 space-y-2"></ul>
+  </body>
+</html>
