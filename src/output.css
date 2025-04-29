@@ -255,6 +255,9 @@
       max-width: 96rem;
     }
   }
+  .mx-auto {
+    margin-inline: auto;
+  }
   .mt-32 {
     margin-top: calc(var(--spacing) * 32);
   }
@@ -320,6 +323,9 @@
   }
   .w-80 {
     width: calc(var(--spacing) * 80);
+  }
+  .w-\[50\%\] {
+    width: 50%;
   }
   .w-\[120px\] {
     width: 120px;
