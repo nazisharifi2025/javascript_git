@@ -454,6 +454,10 @@
     --tw-gradient-position: from 330deg in oklab;
     background-image: conic-gradient(var(--tw-gradient-stops));
   }
+  .bg-gradient-to-r {
+    --tw-gradient-position: to right in oklab;
+    background-image: linear-gradient(var(--tw-gradient-stops));
+  }
   .bg-linear-\[25deg\,red_5\%\,yellow_60\%\,lime_90\%\,teal\] {
     --tw-gradient-position: 25deg,red 5%,yellow 60%,lime 90%,teal;
     background-image: linear-gradient(var(--tw-gradient-stops,25deg,red 5%,yellow 60%,lime 90%,teal));
@@ -469,6 +473,9 @@
   .from-pink-400 {
     --tw-gradient-from: var(--color-pink-400);
     --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+  }
+  .from-40\% {
+    --tw-gradient-from-position: 40%;
   }
   .to-blue-400 {
     --tw-gradient-to: var(--color-blue-400);
