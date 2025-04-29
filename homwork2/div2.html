@@ -17,20 +17,20 @@
   />
   </div>
   <script>
-    const imgin = document.getElementById("movingImage");
-    const contener = imgin.parentElement;
-    let direction = 1;
-    let pos = 0;
-    function inimaet() {
-      const mex = contener.clientWidth - imgin.clientWidth;
-      pos += direction * 2;
-      if (pos >= mex || pos <= 0) {
-        direction *= -1;
-      }
-      imgin.style.left = pos + "px";
-      requestAnimationFrame(inimaet);
+    const img = document.getElementById("movingImge");
+    const contener = img.parentElement;
+    let num = 1;
+    let tik = 0;
+    function anim(){
+        const sum = img.clientWidth - contener.clientWidth ;
+        tik += num * 2;
+        if(tik >= sum || tik <=0){
+            num *= -1;
+        } 
+        img.style.left = tik + "px";
+        requestAnimationFrame(anim)
     }
-    inimaet();
+    anim();
   </script>
 
 </body>
