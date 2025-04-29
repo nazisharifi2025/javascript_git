@@ -7,7 +7,31 @@
     <link rel="stylesheet" href="../src/output.css">
 </head>
 <body class="flex justify-center items-center h-screen w-full bg-gray-100"></body>
-    <div class="relative h-[250px] w-[450px] bg-white shadow-2xl border rounded-lg overflow-hidden" style="clip-path: polygon(0 10%, 100% 0%, 100% 100%, 0% 100%);">
+<div class="relative h-[350px] w-[350px] z-20 rounded-2xl overflow-hidden">
+    <div class="absolute top-0 left-0 w-full h-full bg-linear-150 rounded-2xl from-blue-700  to-fuchsia-700 rotate-12 origin-bottom-left"></div>
+    <img
+    id="movingImage"
+    src="../html/img/gallary-3.jpg"
+    class="h-[120px] w-[120px] bottom-0 object-cover absolute rounded-lg"
+    alt="عکس"
+  />
+  </div>
+  <script>
+    const imgin = document.getElementById("movingImage");
+    const contener = imgin.parentElement;
+    let direction = 1;
+    let pos = 0;
+    function inimaet() {
+      const mex = contener.clientWidth - imgin.clientWidth;
+      pos += direction * 2;
+      if (pos >= mex || pos <= 0) {
+        direction *= -1;
+      }
+      imgin.style.left = pos + "px";
+      requestAnimationFrame(inimaet);
+    }
+    inimaet();
+  </script>
 
 </body>
 </html>
