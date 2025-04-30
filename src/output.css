@@ -373,6 +373,9 @@
   .h-\[350px\] {
     height: 350px;
   }
+  .h-\[400px\] {
+    height: 400px;
+  }
   .h-full {
     height: 100%;
   }
@@ -423,6 +426,9 @@
   }
   .w-\[350px\] {
     width: 350px;
+  }
+  .w-\[400px\] {
+    width: 400px;
   }
   .w-\[450px\] {
     width: 450px;
@@ -750,10 +756,10 @@
 }
 @layer utilities {
   .mask-wave {
-    -webkit-mask-image: url("/masks/wave-mask.svg");
+    -webkit-mask-image: url("../html/img/coffee-splashes-realistic-set-isolated-liquid-spray-coffee-bean-ceramic-cups-transparent_1284-28598.avif");
     -webkit-mask-size: 100% 100%;
     -webkit-mask-repeat: no-repeat;
-    mask-image: url("/masks/wave-mask.svg");
+    mask-image: url("../html/img/coffee-splashes-realistic-set-isolated-liquid-spray-coffee-bean-ceramic-cups-transparent_1284-28598.avif");
     mask-size: 100% 100%;
     mask-repeat: no-repeat;
   }

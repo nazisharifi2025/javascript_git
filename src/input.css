@@ -1,10 +1,10 @@
 @import "tailwindcss";
 @layer utilities {
   .mask-wave {
-    -webkit-mask-image: url("/masks/wave-mask.svg");
+    -webkit-mask-image: url("../html/img/coffee-splashes-realistic-set-isolated-liquid-spray-coffee-bean-ceramic-cups-transparent_1284-28598.avif");
     -webkit-mask-size: 100% 100%;
     -webkit-mask-repeat: no-repeat;
-    mask-image: url("/masks/wave-mask.svg");
+    mask-image: url("../html/img/coffee-splashes-realistic-set-isolated-liquid-spray-coffee-bean-ceramic-cups-transparent_1284-28598.avif");
     mask-size: 100% 100%;
     mask-repeat: no-repeat;
   }
