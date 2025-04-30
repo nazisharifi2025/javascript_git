@@ -1,1 +1,11 @@
 @import "tailwindcss";
+@layer utilities {
+  .mask-wave {
+    -webkit-mask-image: url("/masks/wave-mask.svg");
+    -webkit-mask-size: 100% 100%;
+    -webkit-mask-repeat: no-repeat;
+    mask-image: url("/masks/wave-mask.svg");
+    mask-size: 100% 100%;
+    mask-repeat: no-repeat;
+  }
+}
