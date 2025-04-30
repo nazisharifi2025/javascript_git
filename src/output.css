@@ -517,6 +517,9 @@
   .bg-\[\#7b4f35\] {
     background-color: #7b4f35;
   }
+  .bg-amber-700 {
+    background-color: var(--color-amber-700);
+  }
   .bg-amber-950 {
     background-color: var(--color-amber-950);
   }
