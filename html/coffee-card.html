@@ -7,29 +7,39 @@
     <link rel="stylesheet" href="../src/output.css" />
   </head>
   <body>
-    <!-- بخش اول با رنگ قهوه‌ای -->
     <div
-      class="relative bg-[#7b4f35] h-64 text-white flex items-center justify-center"
+      class="relative bg-[#7b4f35] text-white h-64 flex items-center justify-center"
     >
-      <h2 class="text-2xl font-bold">بخش قهوه‌ای با موج پایین</h2>
-
-      <!-- موج در پایین به‌صورت پس‌زمینه -->
-      <div
-        class="absolute bottom-0 left-0 w-full overflow-hidden leading-none rotate-180"
-      >
-        <svg viewBox="0 0 1440 320" class="w-full h-20">
+      <!-- موج بالا -->
+      <div class="absolute top-0 left-0 w-full overflow-hidden leading-none">
+        <svg class="w-[80%] h-20" viewBox="0 0 1440 320">
           <path
             fill="#7b4f35"
             fill-opacity="1"
-            d="M0,160L60,144C120,128,240,96,360,106.7C480,117,600,171,720,170.7C840,171,960,117,1080,90.7C1200,64,1320,64,1380,64L1440,64V320H0Z"
+            d="M0,160L60,144C120,128,240,96,360,106.7C480,117,600,171,720,170.7C840,171,960,117,1080,90.7C1200,64,1320,64,1380,64L1440,64V0H0Z"
+          ></path>
+        </svg>
+      </div>
+
+      <h2 class="text-2xl font-bold z-10">دیو با موج در بالا و پایین</h2>
+
+      <!-- موج پایین -->
+      <div
+        class="absolute bottom-0 left-0 w-full overflow-hidden leading-none rotate-180"
+      >
+        <svg class="w-full h-20" viewBox="0 0 1440 320">
+          <path
+            fill="#7b4f35"
+            fill-opacity="1"
+            d="M0,160L60,144C120,128,240,96,360,106.7C480,117,600,171,720,170.7C840,171,960,117,1080,90.7C1200,64,1320,64,1380,64L1440,64V0H0Z"
           ></path>
         </svg>
       </div>
     </div>
 
-    <!-- بخش دوم سفید -->
+    <!-- بخش پایین -->
     <div class="bg-white h-64 flex items-center justify-center">
-      <p class="text-gray-700 text-xl">این بخش دومه</p>
+      <p class="text-gray-800 text-lg">بخش دوم سایت</p>
     </div>
   </body>
 </html>
