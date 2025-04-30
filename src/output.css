@@ -599,6 +599,9 @@
     --tw-gradient-to: var(--color-violet-700);
     --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
   }
+  .mask-repeat {
+    mask-repeat: repeat;
+  }
   .object-cover {
     object-fit: cover;
   }
@@ -756,10 +759,10 @@
 }
 @layer utilities {
   .mask-wave {
-    -webkit-mask-image: url("../html/img/coffee-splashes-realistic-set-isolated-liquid-spray-coffee-bean-ceramic-cups-transparent_1284-28598.avif");
+    -webkit-mask-image: url("/masks/scallop-mask.svg");
     -webkit-mask-size: 100% 100%;
     -webkit-mask-repeat: no-repeat;
-    mask-image: url("../html/img/coffee-splashes-realistic-set-isolated-liquid-spray-coffee-bean-ceramic-cups-transparent_1284-28598.avif");
+    mask-image: url("/masks/scallop-mask.svg");
     mask-size: 100% 100%;
     mask-repeat: no-repeat;
   }

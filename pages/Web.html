@@ -2,17 +2,22 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="../src/output.css" />
+    <title>Wave Mask Test</title>
+    <link href="output.css" rel="stylesheet" />
+    <style>
+      .mask-wave {
+        -webkit-mask-image: url("scallop-mask.svg");
+        -webkit-mask-size: 100% 100%;
+        -webkit-mask-repeat: no-repeat;
+        mask-image: url("scallop-mask.svg");
+        mask-size: 100% 100%;
+        mask-repeat: no-repeat;
+      }
+    </style>
   </head>
-  <body class="bg-black">
+  <body class="bg-black flex justify-center items-center min-h-screen">
     <div class="w-[400px] h-[400px]">
-      <img
-        src="../html/img/coffee-splashes-realistic-set-isolated-liquid-spray-coffee-bean-ceramic-cups-transparent_1284-28598.avif"
-        alt="عکس موج‌دار"
-        class="w-full mask-wave"
-      />
+      <img src="coffee.avif" alt="Wave Image" class="w-full h-full mask-wave" />
     </div>
   </body>
 </html>
