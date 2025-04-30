@@ -1,11 +1,14 @@
 @import "tailwindcss";
-@layer utilities {
-  .mask-wave {
-    -webkit-mask-image: url("/masks/scallop-mask.svg");
-    -webkit-mask-size: 100% 100%;
-    -webkit-mask-repeat: no-repeat;
-    mask-image: url("/masks/scallop-mask.svg");
-    mask-size: 100% 100%;
-    mask-repeat: no-repeat;
-  }
+.mask-wave {
+  background-image: url("coffee-splashes-realistic-set-isolated-liquid-spray-coffee-bean-ceramic-cups-transparent_1284-28598.avif");
+  background-size: cover;
+  background-position: center;
+  -webkit-mask-image: url("scallop-mask.svg");
+  -webkit-mask-size: 100% 100%;
+  -webkit-mask-repeat: no-repeat;
+  mask-image: url("scallop-mask.svg");
+  mask-size: 100% 100%;
+  mask-repeat: no-repeat;
+  width: 400px;
+  height: 400px;
 }
