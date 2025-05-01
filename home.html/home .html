@@ -116,6 +116,14 @@
             />
         </div>
         </div>
+        <script>
+            const clickme = document.getElementById("clickme");
+            const block = document.getElementById("block");
+            clickme.addEventListener("click", ()=>{
+                block.classList.remove("hidden");
+                block.classList.add("flex");
+            })
+        </script>
 
   </body>
 </html>
