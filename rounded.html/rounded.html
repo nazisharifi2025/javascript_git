@@ -5,16 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="../src/output.css" />
+    <script src="rounded.js" defer></script>
   </head>
-  <body>
-    <div class="h-screen w-full bg-amber-700 text-white">
-      <h1 class="text-2xl text-amber-950">COFFEE</h1>
-      <p class="font-serif text-center w-[60%] mx-auto">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, sit
-        vel! Eaque minus quisquam labore? Libero, quibusdam! Et maiores vitae
-        possimus veniam aliquam sapiente est. Ea explicabo eum dicta
-        perspiciatis?
-      </p>
-    </div>
+      <body class="bg-blue-50 flex items-center justify-center min-h-screen">
+        <div
+          class="bg-white rounded-lg shadow-md p-8 w-full max-w-md text-center"
+        >
+          <h1 class="text-2xl font-bold mb-6 text-blue-700">وضعیت آب‌وهوا</h1>
+
+          <input
+            id="cityInput"
+            type="text"
+            placeholder="نام شهر را وارد کنید"
+            class="border border-blue-300 rounded px-4 py-2 w-full mb-4 focus:outline-none focus:ring focus:border-blue-500"
+          />
+
+          <button
+            onclick="getWeather()"
+            class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded w-full"
+          >
+            جستجو
+          </button>
+
+          <div id="result" class="mt-6 text-right"></div>
+        </div>
+
+        <script src="script.js"></script>
+      </body>
+    </html>
   </body>
 </html>
