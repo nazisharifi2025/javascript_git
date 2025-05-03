@@ -508,6 +508,9 @@
   .w-\[90\%\] {
     width: 90%;
   }
+  .w-\[100\%\] {
+    width: 100%;
+  }
   .w-\[120px\] {
     width: 120px;
   }
@@ -714,6 +717,15 @@
     --tw-gradient-position: to bottom left in oklab;
     background-image: linear-gradient(var(--tw-gradient-stops));
   }
+  .bg-\[url\(\.\.\/html\/img\/bg-2\.jpg\)\] {
+    background-image: url(../html/img/bg-2.jpg);
+  }
+  .bg-\[url\(\.\.\/html\/img\/bg1\.jpg\)\] {
+    background-image: url(../html/img/bg1.jpg);
+  }
+  .bg-\[url\(\.\.\/html\/img\/gallary-3\.jpg\)\] {
+    background-image: url(../html/img/gallary-3.jpg);
+  }
   .from-\[\#b7e9ce\] {
     --tw-gradient-from: #b7e9ce;
     --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
@@ -755,6 +767,12 @@
   .to-violet-700 {
     --tw-gradient-to: var(--color-violet-700);
     --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+  }
+  .bg-fixed {
+    background-attachment: fixed;
+  }
+  .bg-no-repeat {
+    background-repeat: no-repeat;
   }
   .mask-repeat {
     mask-repeat: repeat;
