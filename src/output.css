@@ -400,6 +400,9 @@
   .h-10 {
     height: calc(var(--spacing) * 10);
   }
+  .h-16 {
+    height: calc(var(--spacing) * 16);
+  }
   .h-17 {
     height: calc(var(--spacing) * 17);
   }
@@ -580,6 +583,9 @@
   .items-center {
     align-items: center;
   }
+  .justify-between {
+    justify-content: space-between;
+  }
   .justify-center {
     justify-content: center;
   }
@@ -599,11 +605,21 @@
       margin-block-end: calc(calc(var(--spacing) * 2) * calc(1 - var(--tw-space-y-reverse)));
     }
   }
+  .space-x-3 {
+    :where(& > :not(:last-child)) {
+      --tw-space-x-reverse: 0;
+      margin-inline-start: calc(calc(var(--spacing) * 3) * var(--tw-space-x-reverse));
+      margin-inline-end: calc(calc(var(--spacing) * 3) * calc(1 - var(--tw-space-x-reverse)));
+    }
+  }
   .overflow-hidden {
     overflow: hidden;
   }
   .overflow-scroll {
     overflow: scroll;
+  }
+  .overflow-y-scroll {
+    overflow-y: scroll;
   }
   .rounded {
     border-radius: 0.25rem;
@@ -670,6 +686,9 @@
   .bg-amber-300 {
     background-color: var(--color-amber-300);
   }
+  .bg-amber-500 {
+    background-color: var(--color-amber-500);
+  }
   .bg-amber-950 {
     background-color: var(--color-amber-950);
   }
@@ -723,8 +742,20 @@
   .bg-\[url\(\.\.\/html\/img\/bg1\.jpg\)\] {
     background-image: url(../html/img/bg1.jpg);
   }
+  .bg-\[url\(\.\.\/html\/img\/bg3\.jpg\)\] {
+    background-image: url(../html/img/bg3.jpg);
+  }
+  .bg-\[url\(\.\.\/html\/img\/bg4\.jpg\)\] {
+    background-image: url(../html/img/bg4.jpg);
+  }
   .bg-\[url\(\.\.\/html\/img\/gallary-3\.jpg\)\] {
     background-image: url(../html/img/gallary-3.jpg);
+  }
+  .bg-\[url\(\.\.\/html\/img\/istockphoto-1183895348-612x612\.jpg\)\] {
+    background-image: url(../html/img/istockphoto-1183895348-612x612.jpg);
+  }
+  .bg-\[url\(\.\.\/html\/img\/pexels-photo-96627\.webp\)\] {
+    background-image: url(../html/img/pexels-photo-96627.webp);
   }
   .from-\[\#b7e9ce\] {
     --tw-gradient-from: #b7e9ce;
@@ -843,6 +874,10 @@
   }
   .text-\[18px\] {
     font-size: 18px;
+  }
+  .leading-16 {
+    --tw-leading: calc(var(--spacing) * 16);
+    line-height: calc(var(--spacing) * 16);
   }
   .leading-none {
     --tw-leading: 1;
@@ -1030,6 +1065,11 @@
   inherits: false;
   initial-value: 0;
 }
+@property --tw-space-x-reverse {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0;
+}
 @property --tw-border-style {
   syntax: "*";
   inherits: false;
@@ -1163,6 +1203,7 @@
   @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
     *, ::before, ::after, ::backdrop {
       --tw-space-y-reverse: 0;
+      --tw-space-x-reverse: 0;
       --tw-border-style: solid;
       --tw-gradient-position: initial;
       --tw-gradient-from: #0000;
