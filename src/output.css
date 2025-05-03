@@ -875,6 +875,9 @@
   .text-\[18px\] {
     font-size: 18px;
   }
+  .text-\[20px\] {
+    font-size: 20px;
+  }
   .leading-16 {
     --tw-leading: calc(var(--spacing) * 16);
     line-height: calc(var(--spacing) * 16);
@@ -1015,6 +1018,13 @@
     &:hover {
       @media (hover: hover) {
         background-color: var(--color-gray-50);
+      }
+    }
+  }
+  .hover\:text-black {
+    &:hover {
+      @media (hover: hover) {
+        color: var(--color-black);
       }
     }
   }
